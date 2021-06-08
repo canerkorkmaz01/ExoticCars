@@ -1,0 +1,11 @@
+﻿@model Model
+
+    <form asp-action="Create" method="post">
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" />
+        <hr />
+        <label asp-for="BrandId"></label>
+        <select asp-for="BrandId" asp-items="@ViewBag.Brands"></select>
+        <hr />
+        <button type="submit">Ekle</button>
+    </form>
